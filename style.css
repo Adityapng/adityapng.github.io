@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 150px 0 150px;
+}
+
+nav {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+nav > .links > li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+nav > .links {
+  align-self: center;
+}
+
+nav > svg {
+  width: 100px;
+  fill: aqua;
+  align-self: center;
+}
+
+.header {
+  height: 90dvh;
+}
+
+.gradient {
+  height: 10dvh;
+  background-image: linear-gradient(white, black);
+}
+
+.second {
+  height: 100dvh;
+  background-color: black;
+  color: aliceblue;
+}
+
+/* .second::before,
+.header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(3rem);
+}
+
+.header::after {
+  bottom: calc(var(3rem) * -1);
+  background: linear-gradient(to bottom, var(orange), transparent);
+}
+
+.second::before {
+  top: calc(var(3rem) * -1);
+  background: linear-gradient(to top, var(orange), transparent);
+} */
