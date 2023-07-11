@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: #cfcdcd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(65, 65, 65);
+}
+
+.container {
+  padding: 0 150px 0 150px;
+}
+
+nav {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+nav > .links > li {
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+nav > .links {
+  align-self: center;
+}
+
+nav > svg {
+  width: 100px;
+  fill: aqua;
+  align-self: center;
+}
+
+.header {
+  height: 100dvh;
+  background-color: blueviolet;
+}
+
+.second {
+  /* height: 100dvh; */
+  display: flex;
+  background-color: blue;
+}
+
+.second {
+  /* width: 100%; */
+  overflow: hidden;
+  /* align-items: center; */
+  /* flex-direction: row; */
+}
+
+.second > video {
+  flex: 1;
+}
+
+.second > video {
+  width: 100%;
+  height: 100%;
+} /* takes full width when height is not specified*/
+
+.third {
+  height: 100dvh;
+  background-color: aqua;
+}
