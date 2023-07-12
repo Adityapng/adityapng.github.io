@@ -1,11 +1,35 @@
-gsap.to("svg", { x: 100, ease: "elastic.out" });
+// GSAP ScrollTrigger configuration
+gsap.registerPlugin(ScrollTrigger);
 
-// gsap.set(".box", { y: 100, x: 90 });
+function init() {
+  // Variables
+  const videoContainer = document.querySelector(".second");
+  const video = document.querySelector(".earth");
+  const videoDuration = video.duration;
 
-// const timeline = gsap.timeline();
+  // Pin the video container
+  ScrollTrigger.create({
+    trigger: videoContainer,
+    start: "top top",
+    end: "bottom bottom",
+    pin: true,
+    pinSpacing: false,
+  });
 
-// timeline
-//   .from(".box", { x: -400, scale: 1 })
-//   .to(".box", { x: 0 })
-//   .fromTo(".box", { x: 0, scale: 2 }, { scale: 1 })
-//   .to(".box", { x: 400 });
+  // Scrub the video based on scroll position
+  ScrollTrigger.create({
+    trigger: videoContainer,
+    start: "top top",
+    end: "bottom bottom",
+    scrub: true,
+    anticipatePin: 1,
+    onUpdate: (self) => {
+      const progress = self.progress;
+      video.currentTime = progress * videoDuration;
+    },
+  });
+}
+
+window.addEventListener("load", function () {
+  init();
+});
