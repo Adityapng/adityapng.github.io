@@ -23,6 +23,7 @@ function init() {
     end: "bottom bottom",
     scrub: true,
     anticipatePin: 1,
+    // normalizeScroll: true,
     onUpdate: (self) => {
       const progress = self.progress;
       video.currentTime = progress * videoDuration;
