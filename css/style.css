@@ -25,15 +25,17 @@ body {
   background: rgb(65, 65, 65);
 }
 
-.container {
+/* .container {
   padding: 0 150px 0 150px;
-}
+} */
 
 nav {
   background-color: cornflowerblue;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 50px;
+  width: 100dvw;
+  position: fixed;
 }
 
 nav > .links > li {
