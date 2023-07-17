@@ -1,4 +1,3 @@
-// GSAP ScrollTrigger configuration
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
@@ -8,14 +7,41 @@ gsap.fromTo(
   },
   {
     height: "50px",
-    duration: 3,
+    // duration: 3,
     scrollTrigger: {
       trigger: ".container",
       start: "top top",
       end: "bottom top",
       scrub: true,
-      markers: true,
-      // pin: true,
+      // markers: true,
+    },
+  }
+);
+gsap.fromTo(
+  "svg",
+  { scale: 10 },
+  {
+    scale: 1,
+    scrollTrigger: {
+      trigger: ".container",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+      // markers: true,
+    },
+  }
+);
+gsap.fromTo(
+  ".container video",
+  { opacity: 1 },
+  {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".container",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+      // markers: true,
     },
   }
 );
