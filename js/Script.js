@@ -17,9 +17,17 @@ gsap.fromTo(
     },
   }
 );
+
+var scalemax = undefined;
+if (screen.width >= 500) {
+  scalemax = 8;
+} else {
+  scalemax = 2.5;
+}
+
 gsap.fromTo(
   "span",
-  { scale: 8 },
+  { scale: scalemax },
   {
     scale: 1,
     scrollTrigger: {
