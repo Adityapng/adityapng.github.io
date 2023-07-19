@@ -19,7 +19,7 @@ gsap.fromTo(
 );
 gsap.fromTo(
   "span",
-  { scale: 10 },
+  { scale: 8 },
   {
     scale: 1,
     scrollTrigger: {
