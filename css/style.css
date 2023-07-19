@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -33,6 +34,7 @@ nav {
   background-color: rgb(36, 36, 36);
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 50px;
   width: 100dvw;
   overflow: hidden;
@@ -48,15 +50,21 @@ nav > .links {
   align-self: center;
 }
 
-nav > svg {
-  width: 100px;
-  fill: rgb(255, 255, 255);
-  align-self: center;
+nav > span {
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 .header {
-  height: 200dvh;
+  /* padding-top: calc(100dvh + 50px); */
+  /* padding-top: 50px; */
+  height: 100dvh;
   background-color: blueviolet;
+}
+.header2 {
+  height: 100dvh;
+  background-color: blue;
 }
 
 .second {

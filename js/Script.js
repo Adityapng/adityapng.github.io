@@ -18,7 +18,7 @@ gsap.fromTo(
   }
 );
 gsap.fromTo(
-  "svg",
+  "span",
   { scale: 10 },
   {
     scale: 1,
@@ -46,6 +46,23 @@ gsap.fromTo(
   }
 );
 
+gsap.fromTo(
+  ".header",
+  { height: "200dvh" },
+  {
+    height: "100dvh",
+    scrollTrigger: {
+      trigger: ".container",
+      start: "top top",
+      end: "bottom top",
+      scrub: true,
+    },
+  }
+);
+
+// gsap.from(".header2", {
+//   scrollTrigger: { trigger: "header2", snap: true, scrub: true },
+// });
 // function init() {
 //   // Variables
 //   const videoContainer = document.querySelector(".second");
